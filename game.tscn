@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckn2ue2i1an7j"]
+
+[ext_resource type="Script" path="res://Game.cs" id="1_o061a"]
+[ext_resource type="Texture2D" uid="uid://cokl7mfxlulrd" path="res://wood.jpg" id="1_wgxdq"]
+[ext_resource type="Texture2D" uid="uid://dsgb1r8181ose" path="res://dough.png" id="2_rim36"]
+[ext_resource type="Texture2D" uid="uid://bfl3j5emthut" path="res://rolling-pin.png" id="4_dkpq4"]
+[ext_resource type="Script" path="res://Dough.cs" id="4_ka1vh"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_o061a")
+
+[node name="Table" type="Sprite2D" parent="."]
+position = Vector2(581.5, 323)
+scale = Vector2(0.941406, 0.7375)
+texture = ExtResource("1_wgxdq")
+
+[node name="Dough" type="Sprite2D" parent="."]
+position = Vector2(576, 311)
+scale = Vector2(0.6525, 0.675)
+texture = ExtResource("2_rim36")
+script = ExtResource("4_ka1vh")
+
+[node name="ProgressBar" type="ProgressBar" parent="Dough"]
+offset_left = 415.326
+offset_top = 340.741
+offset_right = 889.326
+offset_bottom = 463.741
+
+[node name="RollingPin" type="Sprite2D" parent="."]
+position = Vector2(600, 226)
+scale = Vector2(0.729464, 0.679464)
+texture = ExtResource("4_dkpq4")
