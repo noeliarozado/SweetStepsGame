@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckn2ue2i1an7j"]
+[gd_scene load_steps=11 format=3 uid="uid://ckn2ue2i1an7j"]
 
 [ext_resource type="Script" path="res://Game.cs" id="1_o061a"]
 [ext_resource type="Texture2D" uid="uid://cokl7mfxlulrd" path="res://wood.jpg" id="1_wgxdq"]
 [ext_resource type="Texture2D" uid="uid://dsgb1r8181ose" path="res://dough.png" id="2_rim36"]
 [ext_resource type="Texture2D" uid="uid://bfl3j5emthut" path="res://rolling-pin.png" id="4_dkpq4"]
 [ext_resource type="Script" path="res://Dough.cs" id="4_ka1vh"]
+[ext_resource type="Texture2D" uid="uid://cokc57n473str" path="res://Butter.png" id="6_yxofe"]
+[ext_resource type="Texture2D" uid="uid://c4pfjmaog4e0j" path="res://Egg.png" id="7_pgtjm"]
+[ext_resource type="Texture2D" uid="uid://scri7fputqnw" path="res://Flour.png" id="8_noei4"]
+[ext_resource type="Texture2D" uid="uid://birl2srilolhw" path="res://Sugar.png" id="9_xk4tr"]
+[ext_resource type="Texture2D" uid="uid://cmfdhk32q6owg" path="res://mixingbowl.png" id="10_lds60"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_o061a")
@@ -30,3 +35,24 @@ offset_bottom = 463.741
 position = Vector2(600, 226)
 scale = Vector2(0.729464, 0.679464)
 texture = ExtResource("4_dkpq4")
+
+[node name="IngredientsContainer" type="Node2D" parent="."]
+
+[node name="Butter" type="Sprite2D" parent="IngredientsContainer"]
+texture = ExtResource("6_yxofe")
+
+[node name="Egg" type="Sprite2D" parent="IngredientsContainer"]
+texture = ExtResource("7_pgtjm")
+
+[node name="Flour" type="Sprite2D" parent="IngredientsContainer"]
+texture = ExtResource("8_noei4")
+
+[node name="Sugar" type="Sprite2D" parent="IngredientsContainer"]
+texture = ExtResource("9_xk4tr")
+
+[node name="MixingBowl" type="Sprite2D" parent="."]
+texture = ExtResource("10_lds60")
+
+[node name="MixingBar" type="ProgressBar" parent="."]
+offset_right = 4.0
+offset_bottom = 27.0
