@@ -1,9 +1,3 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
-
-# Additional Godot ignores
-.import/
-.export/
-export_templates/
-*.tmp

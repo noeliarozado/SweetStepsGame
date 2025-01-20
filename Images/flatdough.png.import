@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://scri7fputqnw"
-path="res://.godot/imported/Flour.png-5592567b530ff6fdf214cef0ae85c893.ctex"
+uid="uid://c5tojd2xyjvqu"
+path="res://.godot/imported/flatdough.png-42ce8979e4cfa954bf61f02074133056.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Flour.png"
-dest_files=["res://.godot/imported/Flour.png-5592567b530ff6fdf214cef0ae85c893.ctex"]
+source_file="res://images/flatdough.png"
+dest_files=["res://.godot/imported/flatdough.png-42ce8979e4cfa954bf61f02074133056.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfl3j5emthut"
-path="res://.godot/imported/rolling-pin.png-7db9d147f7b91972f14b3f62834066cd.ctex"
+uid="uid://i7o2vixmrnsc"
+path="res://.godot/imported/rolling-pin.png-236122537d0e4fe40ae6badbab68fe44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://rolling-pin.png"
-dest_files=["res://.godot/imported/rolling-pin.png-7db9d147f7b91972f14b3f62834066cd.ctex"]
+source_file="res://images/rolling-pin.png"
+dest_files=["res://.godot/imported/rolling-pin.png-236122537d0e4fe40ae6badbab68fe44.ctex"]
 
 [params]
 
