@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://dwtc4372ofjlj"]
+
+[ext_resource type="Texture2D" uid="uid://bdimdll5y0wa3" path="res://Images/wood.jpg" id="1_2ktnn"]
+[ext_resource type="Script" path="res://Scenes/ChoosingIngredients.cs" id="1_u17iq"]
+[ext_resource type="Texture2D" uid="uid://camnx6ehm04m1" path="res://Images/Flour.png" id="2_40goh"]
+[ext_resource type="Texture2D" uid="uid://lxxo6idwtan7" path="res://Images/Egg.png" id="3_md1qp"]
+[ext_resource type="Texture2D" uid="uid://ce2rg38o2nlit" path="res://Images/Butter.png" id="4_trago"]
+[ext_resource type="Texture2D" uid="uid://bvfo71fgt7vqy" path="res://Images/Sugar.png" id="5_1tjik"]
+
+[node name="ChoosingIngredients" type="Node2D"]
+script = ExtResource("1_u17iq")
+
+[node name="TableBackground" type="Sprite2D" parent="."]
+position = Vector2(579.5, 320)
+scale = Vector2(0.933594, 0.725)
+texture = ExtResource("1_2ktnn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 69.0
+offset_top = 40.0
+offset_right = 401.0
+offset_bottom = 76.0
+text = "Select the ingredients to make cookies"
+
+[node name="Flour" type="Sprite2D" parent="."]
+position = Vector2(215, 438)
+scale = Vector2(0.831699, 0.776978)
+texture = ExtResource("2_40goh")
+
+[node name="Egg" type="Sprite2D" parent="."]
+position = Vector2(759, 495)
+scale = Vector2(0.752083, 0.807407)
+texture = ExtResource("3_md1qp")
+
+[node name="Butter" type="Sprite2D" parent="."]
+position = Vector2(651, 283)
+scale = Vector2(0.665714, 0.582857)
+texture = ExtResource("4_trago")
+
+[node name="Sugar" type="Sprite2D" parent="."]
+position = Vector2(1006.25, 332.5)
+scale = Vector2(0.289375, 0.30625)
+texture = ExtResource("5_1tjik")
+
+[node name="FlourButton" type="Button" parent="."]
+offset_left = 199.0
+offset_top = 229.0
+offset_right = 247.0
+offset_bottom = 260.0
+text = "Flour"
+
+[node name="EggButton" type="Button" parent="."]
+offset_left = 836.0
+offset_top = 568.0
+offset_right = 871.0
+offset_bottom = 599.0
+text = "Egg"
+
+[node name="ButterButton" type="Button" parent="."]
+offset_left = 592.0
+offset_top = 118.0
+offset_right = 650.0
+offset_bottom = 149.0
+text = "Butter"
+
+[node name="SugarButton" type="Button" parent="."]
+offset_left = 1008.0
+offset_top = 183.0
+offset_right = 1061.0
+offset_bottom = 214.0
+text = "Sugar"

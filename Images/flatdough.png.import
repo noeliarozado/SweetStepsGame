@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5tojd2xyjvqu"
-path="res://.godot/imported/flatdough.png-42ce8979e4cfa954bf61f02074133056.ctex"
+path="res://.godot/imported/flatdough.png-beddd7b6d3b93b695902225b94c32cc9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/flatdough.png"
-dest_files=["res://.godot/imported/flatdough.png-42ce8979e4cfa954bf61f02074133056.ctex"]
+source_file="res://Images/flatdough.png"
+dest_files=["res://.godot/imported/flatdough.png-beddd7b6d3b93b695902225b94c32cc9.ctex"]
 
 [params]
 

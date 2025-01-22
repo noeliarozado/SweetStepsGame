@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://cexk6q7nclcp2"]
+
+[ext_resource type="Texture2D" uid="uid://daa5r133bcp3r" path="res://Images/kitchenwall.jpg" id="1_sq5bh"]
+[ext_resource type="Texture2D" uid="uid://deuk5k1rfk4ue" path="res://Images/mixingbowl.png" id="2_p2ba1"]
+
+[node name="MixingIngredients" type="Node2D"]
+
+[node name="TableBackground" type="Sprite2D" parent="."]
+position = Vector2(578.197, 331.283)
+scale = Vector2(1.6114, 1.62755)
+texture = ExtResource("1_sq5bh")
+
+[node name="Mixer" type="Sprite2D" parent="."]
+position = Vector2(795, 346)
+scale = Vector2(1.14167, 1.13333)
+texture = ExtResource("2_p2ba1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 355.0
+offset_top = 15.0
+offset_right = 638.0
+offset_bottom = 66.0
+text = "Now let's mix the ingredients!"
