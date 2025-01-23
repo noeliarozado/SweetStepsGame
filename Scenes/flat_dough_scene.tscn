@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b815bh1mvibsq"]
+
+[ext_resource type="Texture2D" uid="uid://bdimdll5y0wa3" path="res://Images/wood.jpg" id="1_cr80f"]
+[ext_resource type="Texture2D" uid="uid://c5tojd2xyjvqu" path="res://Images/flatdough.png" id="2_wgxfe"]
+
+[node name="FlatDoughScene" type="Node2D"]
+
+[node name="TableBackground" type="Sprite2D" parent="."]
+position = Vector2(582, 329.5)
+scale = Vector2(0.946875, 0.751042)
+texture = ExtResource("1_cr80f")
+
+[node name="Dough" type="Sprite2D" parent="."]
+position = Vector2(650, 290)
+scale = Vector2(0.900085, 0.843809)
+texture = ExtResource("2_wgxfe")

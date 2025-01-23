@@ -1,9 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://cexk6q7nclcp2"]
+[gd_scene load_steps=5 format=3 uid="uid://cexk6q7nclcp2"]
 
+[ext_resource type="Script" path="res://Scenes/MixingIngredients.cs" id="1_h17ev"]
 [ext_resource type="Texture2D" uid="uid://daa5r133bcp3r" path="res://Images/kitchenwall.jpg" id="1_sq5bh"]
 [ext_resource type="Texture2D" uid="uid://deuk5k1rfk4ue" path="res://Images/mixingbowl.png" id="2_p2ba1"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65mg5"]
+corner_radius_top_left = 150
+corner_radius_top_right = 150
+corner_radius_bottom_right = 150
+corner_radius_bottom_left = 150
+
 [node name="MixingIngredients" type="Node2D"]
+script = ExtResource("1_h17ev")
 
 [node name="TableBackground" type="Sprite2D" parent="."]
 position = Vector2(578.197, 331.283)
@@ -21,3 +29,23 @@ offset_top = 15.0
 offset_right = 638.0
 offset_bottom = 66.0
 text = "Now let's mix the ingredients!"
+
+[node name="MixButton" type="Button" parent="."]
+offset_left = 964.0
+offset_top = 313.0
+offset_right = 1010.0
+offset_bottom = 364.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_65mg5")
+
+[node name="MixProgressBar" type="ProgressBar" parent="."]
+offset_left = 922.0
+offset_top = 595.0
+offset_right = 1115.0
+offset_bottom = 628.0
+
+[node name="MessageLabel" type="Label" parent="."]
+offset_left = 458.0
+offset_top = 101.0
+offset_right = 538.0
+offset_bottom = 142.0
+text = "\"\""
