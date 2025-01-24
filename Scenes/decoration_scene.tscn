@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://djnwpq0x5n3aw"]
+
+[ext_resource type="Texture2D" uid="uid://bdimdll5y0wa3" path="res://Images/wood.jpg" id="1_i7t4f"]
+
+[node name="DecorationScene" type="Node2D"]
+
+[node name="TableBackground" type="Sprite2D" parent="."]
+position = Vector2(582, 329.5)
+scale = Vector2(0.946875, 0.751042)
+texture = ExtResource("1_i7t4f")
