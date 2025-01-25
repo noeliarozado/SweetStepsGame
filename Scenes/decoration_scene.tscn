@@ -1,10 +1,36 @@
-[gd_scene load_steps=2 format=3 uid="uid://djnwpq0x5n3aw"]
+[gd_scene load_steps=4 format=3 uid="uid://djnwpq0x5n3aw"]
 
 [ext_resource type="Texture2D" uid="uid://bdimdll5y0wa3" path="res://Images/wood.jpg" id="1_i7t4f"]
+[ext_resource type="Script" path="res://Scenes/DecorationScene.cs" id="1_l61xt"]
+[ext_resource type="Texture2D" uid="uid://dv3f8q8dbraw0" path="res://Images/startray.png" id="3_7snew"]
 
 [node name="DecorationScene" type="Node2D"]
+script = ExtResource("1_l61xt")
 
 [node name="TableBackground" type="Sprite2D" parent="."]
 position = Vector2(582, 329.5)
 scale = Vector2(0.946875, 0.751042)
 texture = ExtResource("1_i7t4f")
+
+[node name="StarTray" type="Sprite2D" parent="."]
+position = Vector2(605, 304)
+scale = Vector2(0.211914, 0.253906)
+texture = ExtResource("3_7snew")
+
+[node name="DecoratingButton" type="Button" parent="."]
+offset_left = 977.0
+offset_top = 534.0
+offset_right = 1080.0
+offset_bottom = 565.0
+text = "Decorate cookies"
+
+[node name="EatCookiesButton" type="Button" parent="."]
+visible = false
+offset_left = 977.0
+offset_top = 534.0
+offset_right = 1080.0
+offset_bottom = 565.0
+text = "Eat cookies"
+
+[connection signal="pressed" from="DecoratingButton" to="." method="OnDecoratingButtonPressed"]
+[connection signal="pressed" from="EatCookiesButton" to="." method="OnEatCookiesButtonPressed"]
