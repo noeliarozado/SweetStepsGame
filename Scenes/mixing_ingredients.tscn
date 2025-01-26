@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://deuk5k1rfk4ue" path="res://Images/mixingbowl.png" id="2_p2ba1"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65mg5"]
+bg_color = Color(0.922621, 0.415702, 0.442097, 1)
 corner_radius_top_left = 150
 corner_radius_top_right = 150
 corner_radius_bottom_right = 150
@@ -24,28 +25,22 @@ scale = Vector2(1.14167, 1.13333)
 texture = ExtResource("2_p2ba1")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 355.0
-offset_top = 15.0
-offset_right = 638.0
-offset_bottom = 66.0
-text = "Now let's mix the ingredients!"
+offset_left = 69.0
+offset_top = 43.0
+offset_right = 1101.0
+offset_bottom = 106.0
+theme_override_font_sizes/font_size = 45
+text = "Press the button to start mixing the ingredients"
 
 [node name="MixButton" type="Button" parent="."]
-offset_left = 964.0
-offset_top = 313.0
-offset_right = 1010.0
-offset_bottom = 364.0
+offset_left = 929.0
+offset_top = 493.0
+offset_right = 983.0
+offset_bottom = 550.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_65mg5")
 
 [node name="MixProgressBar" type="ProgressBar" parent="."]
-offset_left = 922.0
-offset_top = 595.0
-offset_right = 1115.0
-offset_bottom = 628.0
-
-[node name="MessageLabel" type="Label" parent="."]
-offset_left = 458.0
-offset_top = 101.0
-offset_right = 538.0
-offset_bottom = 142.0
-text = "\"\""
+offset_left = 906.0
+offset_top = 586.0
+offset_right = 1118.0
+offset_bottom = 634.0

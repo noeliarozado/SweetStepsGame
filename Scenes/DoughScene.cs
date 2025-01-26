@@ -19,7 +19,9 @@ public partial class DoughScene : Node2D
 		rollingPin = GetNode<Sprite2D>("RollingPin");
 		dough = GetNode<Sprite2D>("Dough");
 		progressBar = GetNode<ProgressBar>("RollingProgressBar");
-
+		
+		progressBar.Modulate = new Color(255 / 255f, 215 / 255f, 0 / 255f);
+	
 		progressBar.Value = kneadingProgress;
 
 		previousYPosition = rollingPin.GlobalPosition.Y;

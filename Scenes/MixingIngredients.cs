@@ -15,6 +15,8 @@ public partial class MixingIngredients : Node2D
 		mixProgressBar = GetNode<ProgressBar>("MixProgressBar");
 		messageLabel = GetNode<Label>("MessageLabel");
 		mixButton = GetNode<Button>("MixButton");
+		
+		mixProgressBar.Modulate = new Color(255 / 255f, 215 / 255f, 0 / 255f);
 
 		mixButton.Pressed += OnMixButtonPressed;
 	}
@@ -40,8 +42,6 @@ public partial class MixingIngredients : Node2D
 			{
 				isMixing = false;
 				mixProgressBar.Value = mixProgressBar.MaxValue;
-
-				messageLabel.Text = "Ingredients mixed!";
 
 				// Wait for 1 second and change to the new scene
 				Timer timer = new Timer();

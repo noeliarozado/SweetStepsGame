@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://b815bh1mvibsq"]
+[gd_scene load_steps=7 format=3 uid="uid://b815bh1mvibsq"]
 
 [ext_resource type="Texture2D" uid="uid://bdimdll5y0wa3" path="res://Images/wood.jpg" id="1_cr80f"]
 [ext_resource type="Script" path="res://Scenes/FlatDoughScene.cs" id="1_k4tn1"]
 [ext_resource type="Texture2D" uid="uid://c5tojd2xyjvqu" path="res://Images/flatdough.png" id="2_wgxfe"]
 [ext_resource type="Texture2D" uid="uid://dvd00eij5iiot" path="res://Images/stardough.png" id="4_nalmq"]
+[ext_resource type="Texture2D" uid="uid://bo80v8rb21d4p" path="res://Images/starcutter.png" id="5_6f6em"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khfqt"]
+bg_color = Color(0.960784, 0.870588, 0.701961, 1)
 
 [node name="FlatDoughScene" type="Node2D"]
 script = ExtResource("1_k4tn1")
@@ -14,16 +18,19 @@ scale = Vector2(0.946875, 0.751042)
 texture = ExtResource("1_cr80f")
 
 [node name="Dough" type="Sprite2D" parent="."]
-position = Vector2(650, 290)
+position = Vector2(564, 291)
 scale = Vector2(0.900085, 0.843809)
 texture = ExtResource("2_wgxfe")
 
 [node name="StarMold" type="Button" parent="."]
-offset_left = 1058.0
-offset_top = 225.0
-offset_right = 1098.0
-offset_bottom = 256.0
-text = "Star"
+offset_left = 888.0
+offset_top = 219.0
+offset_right = 1090.0
+offset_bottom = 273.0
+theme_override_colors/font_color = Color(0.305882, 0.203922, 0.180392, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_khfqt")
+text = "Star mould"
 
 [node name="MessageLabel" type="Label" parent="."]
 offset_left = 91.0
@@ -37,3 +44,16 @@ visible = false
 position = Vector2(616, 333)
 scale = Vector2(0.567362, 0.583594)
 texture = ExtResource("4_nalmq")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 290.0
+offset_top = 8.0
+offset_right = 839.0
+offset_bottom = 71.0
+theme_override_font_sizes/font_size = 40
+text = "Use the cutter on the dough"
+
+[node name="Cutter" type="Sprite2D" parent="."]
+position = Vector2(978, 358)
+scale = Vector2(0.146, 0.175)
+texture = ExtResource("5_6f6em")

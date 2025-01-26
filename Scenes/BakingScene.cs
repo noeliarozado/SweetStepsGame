@@ -12,6 +12,9 @@ public partial class BakingScene : Node2D
 	{
 		starTray = GetNode<Sprite2D>("StarTray");
 		progressBar = GetNode<ProgressBar>("BakingProgressBar");
+		
+		progressBar.Modulate = new Color(255 / 255f, 215 / 255f, 0 / 255f);
+	
 		bakingTimer = new Timer();
 		AddChild(bakingTimer);
 

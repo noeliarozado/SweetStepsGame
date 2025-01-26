@@ -24,7 +24,15 @@ scale = Vector2(0.763214, 0.793571)
 texture = ExtResource("4_268a1")
 
 [node name="RollingProgressBar" type="ProgressBar" parent="."]
-offset_left = 859.0
-offset_top = 557.0
-offset_right = 1096.0
-offset_bottom = 603.0
+offset_left = 873.0
+offset_top = 556.0
+offset_right = 1110.0
+offset_bottom = 602.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 227.0
+offset_top = 8.0
+offset_right = 959.0
+offset_bottom = 71.0
+theme_override_font_sizes/font_size = 40
+text = "Flatten the dough with the rolling pin"

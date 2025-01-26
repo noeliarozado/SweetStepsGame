@@ -26,8 +26,9 @@ public partial class FlatDoughScene : Node2D
 		{
 			dough.Visible = false;
 			starBiscuit.Visible = true;
+			
+			starBiscuit.Position += new Vector2(-50, 0);  // Moves the sprite 50 pixels to the left
 
-			messageLabel.Text = "Getting ready to bake...";
 			biscuitChosen = true; 
 
 			TransitionToBakingScene();
