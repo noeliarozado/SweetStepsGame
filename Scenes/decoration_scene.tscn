@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://djnwpq0x5n3aw"]
+[gd_scene load_steps=8 format=3 uid="uid://djnwpq0x5n3aw"]
 
 [ext_resource type="Texture2D" uid="uid://bdimdll5y0wa3" path="res://Images/wood.jpg" id="1_i7t4f"]
 [ext_resource type="Script" path="res://Scenes/DecorationScene.cs" id="1_l61xt"]
@@ -8,8 +8,19 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3myn"]
 bg_color = Color(0.960784, 0.870588, 0.701961, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_84nto"]
+bg_color = Color(0.690196, 0.419608, 0.313726, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fofgm"]
-bg_color = Color(0.960784, 0.870588, 0.701961, 1)
+bg_color = Color(0.85098, 0.580392, 0.45098, 1)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
 
 [node name="DecorationScene" type="Node2D"]
 script = ExtResource("1_l61xt")
@@ -41,8 +52,10 @@ offset_left = 899.0
 offset_top = 381.0
 offset_right = 1107.0
 offset_bottom = 542.0
-theme_override_colors/font_color = Color(0.305882, 0.203922, 0.180392, 1)
+theme_override_colors/font_hover_color = Color(0.952941, 0.85098, 0.643137, 1)
+theme_override_colors/font_color = Color(1, 0.956863, 0.901961, 1)
 theme_override_font_sizes/font_size = 40
+theme_override_styles/hover = SubResource("StyleBoxFlat_84nto")
 theme_override_styles/normal = SubResource("StyleBoxFlat_fofgm")
 text = "Eat 
 cookies"
@@ -53,13 +66,12 @@ scale = Vector2(0.312917, 0.32375)
 texture = ExtResource("4_8hrwx")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 27.0
-offset_top = 516.0
-offset_right = 210.0
-offset_bottom = 630.0
+offset_left = 414.0
+offset_top = 38.0
+offset_right = 814.0
+offset_bottom = 98.0
 theme_override_font_sizes/font_size = 40
-text = "Let's 
-decorate!"
+text = "Let's decorate!"
 horizontal_alignment = 1
 
 [connection signal="pressed" from="DecoratingButton" to="." method="OnDecoratingButtonPressed"]
